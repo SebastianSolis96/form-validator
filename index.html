@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+		<form action="" class="form" id="form">
+			<!-- Group: User -->
+			<div class="form__group" id="user__group">
+				<label for="user" class="form__label">Username</label>
+				<div class="form__group-input">
+                    <input type="text" class="form__input" name="user" id="user" placeholder="user123">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">
+					Username has to be from 4 to 16 digits and can only contain numbers, letters and underscore.
+				</p>
+			</div>
+
+			<!-- Group: Name -->
+			<div class="form__group" id="name__group">
+				<label for="name" class="form__label">Name</label>
+				<div class="form__group-input">
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Sebastian Solis">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">
+					Your name must have a maximum of 40 digits.
+				</p>
+			</div>
+
+			<!-- Group: Password -->
+			<div class="form__group" id="password__group">
+				<label for="password" class="form__label">Password</label>
+				<div class="form__group-input">
+                    <input type="password" class="form__input" name="password" id="password">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">
+					Password has to be from 4 to 16 digits.
+				</p>
+			</div>
+
+			<!-- Group: Password 2 -->
+			<div class="form__group" id="password2__group">
+				<label for="password2" class="form__label">Confirm password</label>
+				<div class="form__group-input">
+                    <input type="password" class="form__input" name="password2" id="password2">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">
+					Passwords must be the same.
+				</p>
+			</div>
+
+			<!-- Group: Email -->
+			<div class="form__group" id="email__group">
+				<label for="email" class="form__label">Email</label>
+				<div class="form__group-input">
+                    <input type="email" class="form__input" name="email" id="email" placeholder="example@gmail.com">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">
+					Email can only contain letters, numbers, periods, @, hyphen and underscore.
+				</p>
+			</div>
+
+			<!-- Group: Phone -->
+			<div class="form__group" id="phone__group">
+				<label for="phone" class="form__label">Phone</label>
+				<div class="form__group-input">
+                    <input type="number" class="form__input" name="phone" id="phone" placeholder="0999999999">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">
+					Phone can only contain numbers and maximum 10 digits.
+				</p>
+			</div>
+
+			<!-- Group: Terms and conditions -->
+			<div class="form__group" id="terms__group">
+				<label class="form__label">
+                    <input class="form__checkbox" type="checkbox" name="terms" id="terms">
+					Do you agree to our terms & conditions?
+				</label>
+			</div>
+
+			<div class="form__message" id="form__message">
+                <p>
+					<i class="fas fa-exclamation-triangle"></i>
+					<b>Alert!</b> 
+                    Please complete the form correctly. 
+				</p>
+			</div>
+
+			<div class="form__group form__group-btn-send">
+				<button type="submit" class="form__btn">Create account</button>
+                <p class="form__message-success" id="form__message-success">
+					Submit successfully!
+				</p>
+			</div>
+		</form>
+	</main>
+
+	<footer>
+		<p class="copyright">Copyright 2022 - <a href="https://twitter.com/sebascript_" target="_blank">@sebascript_</a></p>
+	</footer>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</html>
